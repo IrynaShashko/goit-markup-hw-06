@@ -377,11 +377,34 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+            <p class="title-form">Оставьте свои данные, мы вам перезвоним</p>
             <button type="button" class="button modal-close" data-modal-close>
                 <svg class="" width="18" height="18">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
+            <form class="form" action="">
+                <div class="form-in">
+                    <label class="form-title" for="">Имя
+                        <input class="fild" type="name" name="name">
+                    </label>
+                    <label class="form-title" for="">Телефон
+                        <input class="fild" type="tel" name="tel">
+                    </label>
+                    <label class="form-title" for="">Почта
+                        <input class="fild" type="email" name="email">
+                    </label>
+                    <label class="form-title" for="">Комментарий
+                        <input class="form-text" type="text" name="text" placeholder="Введите текст">
+                    </label>
+                </div>
+                <svg class="" width="16" height="15">
+                    <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+                <input class="checkbox visually-hidden" type="checkbox"></input>
+                <label class="checkbox-text" for="">Соглашаюсь с рассылкой и принимаю <span class="form-span">Условия договора</span></label>
+                <button class="button form-button" type="submit" >Отправить</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
