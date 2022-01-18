@@ -959,6 +959,7 @@ textarea:active {
     border-radius: 4px;
     transition-duration: 250ms;
     transition-property: var(--timing-function);
+    cursor: pointer;
 
 }
 
