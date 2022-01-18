@@ -304,7 +304,7 @@ img {
 }
 
 .footer-social-list-icons {
-    margin-right: 93px;
+    margin-right: 85px;
 }
 
 .form-register-title {
@@ -788,6 +788,10 @@ img {
 }
 
 /* ............................form................................. */
+input {
+    outline: none;
+}
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -921,6 +925,7 @@ textarea {
     transition-duration: 250ms;
     transition-property: var(--timing-function);
     cursor: pointer;
+    outline: none;
 }
 
 textarea:hover,
@@ -935,6 +940,10 @@ textarea:active {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--second-text-color);
+}
+
+.check {
+    margin-right: 7px;
 }
 
 .form-button {
@@ -1006,6 +1015,7 @@ textarea:active {
 .checkbox-ok {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .form-btn {
@@ -1014,7 +1024,7 @@ textarea:active {
     align-items: center;
 }
 
-.checkbox-ok{
+.checkbox-ok {
     margin-top: 20px;
     margin-bottom: 30px;
 }
