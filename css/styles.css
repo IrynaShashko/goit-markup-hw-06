@@ -875,7 +875,7 @@ input {
 }
 
 .fild:hover~.modal-icon,
-.fild:hover~.modal-icon {
+.fild:focus~.modal-icon {
     color: var(--color-active);
 }
 
