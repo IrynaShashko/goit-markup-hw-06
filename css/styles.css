@@ -925,6 +925,8 @@ textarea {
     transition-property: var(--timing-function);
     cursor: pointer;
     outline: none;
+    transition-duration: 250ms;
+    transition-property: var(--timing-function); 
 }
 
 textarea:hover,
@@ -942,6 +944,8 @@ textarea:active {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition-duration: 250ms;
+    transition-property: var(--timing-function);
 }
 
 .check {
@@ -1036,9 +1040,10 @@ textarea:active {
     border: 2px solid #000000;
     border-radius: 2px;
     margin-right: 7px;
+    cursor: pointer;
 }
 
-.checkbox:checked+.checkbox-text::before{
+.checkbox:checked+.checkbox-text::before {
     border: none;
     background-image: url(../images/check.svg);
     /* background-color: var(--color-active); */
