@@ -879,7 +879,6 @@ input {
     color: var(--color-active);
 }
 
-
 .form-title-in {
     font-weight: 400;
     font-size: 12px;
@@ -940,6 +939,9 @@ textarea:active {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--second-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .check {
@@ -1017,6 +1019,8 @@ textarea:active {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .form-btn {
@@ -1025,7 +1029,17 @@ textarea:active {
     align-items: center;
 }
 
-.checkbox-ok {
-    margin-top: 20px;
-    margin-bottom: 30px;
+.checkbox-text::before {
+    content: "";
+    width: 16px;
+    height: 15px;
+    border: 2px solid #000000;
+    border-radius: 2px;
+    margin-right: 7px;
+}
+
+.checkbox:checked+.checkbox-text::before{
+    border: none;
+    background-image: url(../images/check.svg);
+    /* background-color: var(--color-active); */
 }
