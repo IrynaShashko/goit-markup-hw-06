@@ -926,7 +926,7 @@ textarea {
     cursor: pointer;
     outline: none;
     transition-duration: 250ms;
-    transition-property: var(--timing-function); 
+    transition-property: var(--timing-function);
 }
 
 textarea:hover,
@@ -1033,7 +1033,8 @@ textarea:active {
     align-items: center;
 }
 
-.checkbox-text::before {
+/* ---------------------CHECKBOX 1-------------------------- */
+/* .checkbox-text::before {
     content: "";
     width: 16px;
     height: 15px;
@@ -1047,4 +1048,23 @@ textarea:active {
     border: none;
     background-image: url(../images/check.svg);
     /* background-color: var(--color-active); */
+/* } */
+/* ----------------------CHECKBOX 2------------------------------ */
+.checkbox-text .check-in-span {
+    width: 16px;
+    height: 15px;
+    border: 2px solid #000000;
+    border-radius: 2px;
+    margin-right: 7px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: transparent;
+}
+
+.checkbox:checked+.checkbox-text .check-in-span {
+    border: none;
+    background-color: var(--color-active);
+    fill: var(--color-btn);
 }
